@@ -15,17 +15,18 @@
 
 .header {
     background-color: rgba(255, 144, 14, 0.1);
+    padding: 40px;
 }
 .brand {
     color: rgb(19, 19, 19);
     font-size: 40px;
 }
 .navbar {
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0px auto 90px;
-    padding-top: 40px;
 }
 
 .nav-links ul {
@@ -44,4 +45,55 @@
 }
 .nav-links ul li a:hover {
     color: rgba(66, 66, 66, 1);
+}
+
+/* header content */
+
+.header-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title1, .header-title2 {
+    color: rgb(19, 19, 19);
+    font-size: 50px;
+    text-align: center;
+}
+.header-subtitle {
+    width: 45%;
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    text-align: center;
+    margin: 30px 0px 40px 0px;
+}
+
+.btn {
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 21px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.btn:hover {
+    background: rgb(238, 138, 23)
+}
+
+.header-image {
+    width: 80%;
+    margin: 50px auto 0px;
+}
+.header-image img {
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.header-image img:hover {
+    transform: skewY(2deg);
 }

@@ -2,12 +2,46 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-/* header section start */
-
+/* universal selector */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Work Sans;
+}
+
+/*  */
+/* header section start */
+
+.header {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.brand {
+    color: rgb(19, 19, 19);
+    font-size: 40px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px auto 90px;
+    padding-top: 40px;
+}
+
+.nav-links ul {
+    display: flex;
+}
+.nav-links ul li {
+    list-style: none;
+}
+.nav-links ul li a {
+    text-decoration: none;
+    color: rgba(66, 66, 66, 0.8);
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 30px;
+    transition: 0.3s;
+}
+.nav-links ul li a:hover {
+    color: rgba(66, 66, 66, 1);
 }

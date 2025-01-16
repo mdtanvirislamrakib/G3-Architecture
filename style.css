@@ -15,11 +15,11 @@
 
 .header {
     background-color: rgba(255, 144, 14, 0.1);
-    padding: 40px;
+    padding: 2.5rem;
 }
 .brand {
     color: rgb(19, 19, 19);
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 .navbar {
     width: 90%;
@@ -38,7 +38,7 @@
 .nav-links ul li a {
     text-decoration: none;
     color: rgba(66, 66, 66, 0.8);
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 500;
     margin-right: 30px;
     transition: 0.3s;
@@ -59,13 +59,13 @@
 
 .header-title1, .header-title2 {
     color: rgb(19, 19, 19);
-    font-size: 50px;
+    font-size: 3.1rem;
     text-align: center;
 }
-.header-subtitle {
+.header-description {
     width: 45%;
     color: rgb(114, 114, 114);
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
     margin: 30px 0px 40px 0px;
 }
@@ -74,7 +74,7 @@
     border-radius: 8px;
     background: rgb(255, 144, 14);
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 1.2rem;
     padding: 21px;
     border: none;
     outline: none;
@@ -97,3 +97,91 @@
 .header-image img:hover {
     transform: skewY(2deg);
 }
+
+/*header section design end*/
+
+
+
+
+
+
+
+
+
+/* responsive design */
+
+/*small device responsive start*/
+
+@media screen and (max-width: 650px) {
+    .brand {
+        font-size: 30px;
+    }
+    .navbar {
+        margin: 0px auto 40px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links ul li a {
+        font-size: 1rem;
+        margin-right: 13px;
+    }
+
+    .header-title1, .header-title2 {
+        font-size: 1.9rem;
+    }
+    .header-description {
+        width: 100%;
+        font-size: 15px;
+        margin: 15px 0px 20px 0px;
+    }
+    .btn {
+        border-radius: 8px;
+        font-size: 13px;
+        padding: 15px;
+    }
+    .header-image {
+        width: 100%;
+        margin: 25px auto 0px;
+    }
+}
+
+/*small devive responive end*/
+
+
+
+
+/*medium device responsive start*/
+
+@media screen and (min-width: 651px) and (max-width: 992px) {
+        .brand {
+            font-size: 1.45rem;
+        }
+        .navbar {
+            margin: 0px auto 40px;
+            gap: 20px;
+        }
+        .nav-links ul li a {
+            font-size: 1.1rem;
+            margin-right: 1.25rem;
+        }
+    
+        .header-title1, .header-title2 {
+            font-size: 2.1rem;
+        }
+        .header-description {
+            width: 100%;
+            font-size: 20px;
+            margin: 25px 0px 30px 0px;
+        }
+        .btn {
+            border-radius: 8px;
+            font-size: 18px;
+            padding: 20px;
+        }
+        .header-image {
+            width: 100%;
+            margin: 25px auto 0px;
+        }
+}
+
+/* medium device responsive end */

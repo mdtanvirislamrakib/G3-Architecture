@@ -16,6 +16,7 @@
 .header {
     background-color: rgba(255, 144, 14, 0.1);
     padding: 2.5rem;
+    margin-bottom: 80px;
 }
 .brand {
     color: rgb(19, 19, 19);
@@ -82,7 +83,7 @@
     transition: 0.4s;
 }
 .btn:hover {
-    background: rgb(238, 138, 23)
+    background: rgb(238, 138, 23);
 }
 
 .header-image {
@@ -101,11 +102,48 @@
 /*header section design end*/
 
 
-
-
-
-
-
+/* features section start */
+.our-features {
+    padding: 25px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.features-images {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+}
+.features-images img {
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.features-images img:hover {
+    transform: translateY(-5px);
+}
+.features-content-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.span1 {
+    color: rgba(66, 66, 66, 0.8);
+    font-weight: 500;
+}
+.span2 {
+    color: rgb(238, 138, 23);
+    font-weight: 600;
+}
+.features-content-description {
+    color: rgb(114, 114, 114);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
 
 
 /* responsive design */
@@ -113,6 +151,10 @@
 /*small device responsive start*/
 
 @media screen and (max-width: 650px) {
+    .header {
+        padding: 1rem;
+        margin-bottom: 40px;
+    }
     .brand {
         font-size: 30px;
     }
@@ -153,6 +195,10 @@
 /*medium device responsive start*/
 
 @media screen and (min-width: 651px) and (max-width: 992px) {
+    .header {
+        padding: 1.5rem;
+        margin-bottom: 60px;
+    }
         .brand {
             font-size: 1.45rem;
         }

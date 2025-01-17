@@ -231,19 +231,57 @@ main > section {
 
 /* facts section start */
 .facts {
-    margin-top: 100px;
+    margin: 100px auto 100px;
 }
 .fact-content {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 80px;
+}
+.fact-title {
+    color: rgb(19, 19, 19);
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+}
+.fact-description {
+    color: rgb(114, 114, 114);
+    font-size: 1rem;
 }
 
+.fact-cards {
+    /* width: 85%;
+    margin: 0 auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
+.card {
+    padding: 40px;
+    text-align: center;
+    border: 2px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
 
+.card-number {
+    color: rgb(66, 66, 66);
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+}
 
+.card-name {
+    color: rgb(114, 114, 114);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
 
-
-
+.card img {
+    width: 2.8rem;
+    margin-bottom: 10px;
+}
 
 
 
@@ -383,6 +421,49 @@ main > section {
         left: -1rem;
         bottom: 0px;
     }
+
+    /* facts section */
+
+    .facts {
+        margin: 40px auto 40px;
+    }
+    .fact-content {
+        margin: 0 auto 30px;
+    }
+    .fact-title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    .fact-description {
+        font-size: 0.8rem;
+    }
+    
+    .fact-cards {
+        /* width: 85%;
+        margin: 0 auto; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 15px;
+    }
+    
+    .card {
+        padding: 15px;
+    }
+    
+    .card-number {
+        font-size: 1.2rem;
+        margin-bottom: 3px;
+    }
+    
+    .card-name {
+        font-size: 0.7rem;
+    }
+    
+    .card img {
+        width: 2rem;
+        margin-bottom: 5px;
+    }
     
 }
 
@@ -499,6 +580,51 @@ main > section {
     }
     .features-love-images .year {
         left: -20px;
+    }
+
+
+    /* fact section start */
+
+    .facts {
+        margin: 70px auto 70px;
+    }
+    .fact-content {
+        margin: 0 auto 40px;
+    }
+    .fact-title {
+        font-size: 2rem;
+        margin-bottom: 1.1rem;
+    }
+    .fact-description {
+        font-size: 1rem;
+    }
+    
+    .fact-cards {
+        /* width: 85%;
+        margin: 0 auto; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+    
+    .card-number {
+        font-size: 2rem;
+        margin-bottom: 3.5px;
+    }
+    
+    .card-name {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .card img {
+        width: 2rem;
+        margin-bottom: 7px;
     }
     
 

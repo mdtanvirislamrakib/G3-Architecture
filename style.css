@@ -12,11 +12,12 @@
 
 /*  */
 /* header section start */
-
+main > section {
+    margin-top: 100px;
+}
 .header {
     background-color: rgba(255, 144, 14, 0.1);
     padding: 2.5rem;
-    margin-bottom: 80px;
 }
 .brand {
     color: rgb(19, 19, 19);
@@ -98,60 +99,166 @@
 .header-image img:hover {
     transform: skewY(2deg);
 }
-
 /*header section design end*/
 
 
+
 /* features section start */
+
 .our-features {
-    padding: 25px;
-    width: 100%;
+    padding: 2rem;
+    width: 90%;
     margin: 0 auto;
+    gap: 3rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+    justify-content: center;
 }
 .features-images {
-    width: calc(100% - 75%);
+    border-radius: 8px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.8rem;
+    gap: 24px;
 }
 .features-images img {
-    width: calc(100% - 0.8rem);
-    border-radius: 8px;
     transition: 0.4s;
 }
 .features-images img:hover {
-    transform: translateY(-5px);
+    transform: translateY(5px);
+}
+.features-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
 }
 .features-content-title {
     font-size: 2.8rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
+    text-align: left;
 }
 .span1 {
-    color: rgba(66, 66, 66, 0.8);
-    font-weight: 500;
+    color: rgb(114, 114, 114);
+    font-weight: 600;
 }
 .span2 {
-    color: rgb(238, 138, 23);
+    color: rgb(255, 144, 14);
     font-weight: 600;
 }
 .features-content-description {
     color: rgb(114, 114, 114);
     font-size: 1rem;
     font-weight: 400;
-    margin-bottom: 28px;
+
 }
+
+/* features loves section */
+.feature-enjoy {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    gap: 100px;
+}
+
+.love-head-title {
+    color: rgb(19, 19, 19);
+    font-size: 2.8rem;
+    margin-bottom: 24px;
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 20px;
+}
+.love-head-description {
+    color: rgb(114, 114, 114);
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+
+
+
+.feature-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.features-card {
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+.dexktop, .drag, .mordern, .super {
+    padding: 30px;
+}
+.feature-title {
+    color: rgb(19, 19, 19);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.feature-description {
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+}
+
+.features-card:hover {
+    transform: scaleX(1.02);
+}
+.year {
+    padding: 2rem;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /* width: 340px; */
+}
+.year h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.9rem;
+}
+.year p {
+    font-size: 1.2rem;
+}
+
+.features-love-images {
+    position: relative;
+}
+.features-love-images .year {
+    position: absolute;
+    left: -50px;
+    bottom: 0px;
+}
+
+/* facts section start */
+.facts {
+    margin-top: 100px;
+}
+.fact-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* responsive design */
 
 /*small device responsive start*/
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 576px) {
+    main > section {
+        margin-top: 50px;
+    }
     .header {
         padding: 1rem;
         margin-bottom: 40px;
@@ -186,6 +293,97 @@
         width: 100%;
         margin: 25px auto 0px;
     }
+
+    /* small device features section */
+
+    .our-features {
+        gap: 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .features-images {
+        gap: 0.8rem;
+    }
+    .features-images img {
+        width: 100%;
+    }
+    .features-content-title {
+        font-size: 1.6rem;
+    }
+    .features-content-description {
+        font-size: 0.7rem;
+    
+    }
+    .features-content {
+        gap: 0.8rem;
+    }
+
+
+    /* feature love section start */
+
+
+    .love-head-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        border-left: 3px solid rgb(255, 144, 14);
+        padding-left: 10px;
+    }
+    .love-head-description {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    
+
+
+
+
+    .feature-enjoy {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .feature-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        
+    }
+    .features-card {
+        border-radius: 8px;
+        box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.06);
+        margin-bottom: 0.7rem;
+    }
+    .dexktop, .drag, .mordern, .super {
+        padding: 0.9rem;
+    }
+    .feature-title {
+        color: rgb(19, 19, 19);
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+    .feature-description {
+        color: rgb(114, 114, 114);
+        font-size: 0.8rem;
+    }
+    .year {
+        padding: 1rem;
+        border-radius: 8px;
+    }
+    .year h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.6rem;
+    }
+    .year p {
+        font-size: 0.8rem;
+    }
+    .features-love-images img {
+        width: 100%;
+    }
+    .features-love-images .year {
+        position: absolute;
+        left: -1rem;
+        bottom: 0px;
+    }
+    
 }
 
 /*small devive responive end*/
@@ -195,40 +393,115 @@
 
 /*medium device responsive start*/
 
-@media screen and (min-width: 651px) and (max-width: 992px) {
+@media screen and (min-width: 577px) and (max-width: 1000px) {
+    main > section {
+        margin-top: 90px;
+    }
     .header {
         padding: 1.5rem;
         margin-bottom: 60px;
     }
-        .brand {
-            font-size: 1.45rem;
-        }
-        .navbar {
-            margin: 0px auto 40px;
-            gap: 20px;
-        }
-        .nav-links ul li a {
-            font-size: 1.1rem;
-            margin-right: 1.25rem;
-        }
+    .brand {
+        font-size: 1.45rem;
+    }
+    .navbar {
+        margin: 0px auto 40px;
+        gap: 20px;
+    }
+    .nav-links ul li a {
+        font-size: 1.1rem;
+        margin-right: 1.25rem;
+    }
     
-        .header-title1, .header-title2 {
-            font-size: 2.1rem;
-        }
-        .header-description {
-            width: 100%;
-            font-size: 20px;
-            margin: 25px 0px 30px 0px;
-        }
-        .btn {
-            border-radius: 8px;
-            font-size: 18px;
-            padding: 20px;
-        }
-        .header-image {
-            width: 100%;
-            margin: 25px auto 0px;
-        }
+    .header-title1, .header-title2 {
+        font-size: 2.1rem;
+    }
+    .header-description {
+        width: 100%;
+        font-size: 20px;
+        margin: 25px 0px 30px 0px;
+    }
+    .btn {
+        border-radius: 8px;
+        font-size: 18px;
+        padding: 20px;
+    }
+    .header-image {
+        width: 100%;
+        margin: 25px auto 0px;
+    }
+
+    
+    .our-features {
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .features-images {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+    .features-images img {
+        width: 100%;
+    }
+    .features-content {
+        width: 100%;
+    }
+    .features-content-title {
+        font-size: 2.1srem;
+    }
+    .features-content-description {
+        color: rgb(114, 114, 114);
+        font-size: 1.5rem;
+    }
+
+
+    /* features love section start */
+
+    .feature-enjoy {
+        /* padding: 50px; */
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .feature-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .year {
+        padding: 2rem;
+        border-radius: 8px;
+        background: rgb(255, 144, 14);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        /* width: 340px; */
+    }
+    .year h3 {
+        font-size: 2rem;
+        margin-bottom: 0.9rem;
+    }
+    .year p {
+        font-size: 1rem;
+    }
+    
+    .features-love-images {
+        position: relative;
+        width: 100%;
+    }
+    .features-love-images img{
+        width: 100%;
+    }
+    .features-love-images .year {
+        left: -20px;
+    }
+    
+
 }
 
 /* medium device responsive end */

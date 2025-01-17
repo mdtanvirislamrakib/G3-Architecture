@@ -506,7 +506,9 @@ footer h4 {
     .card {
         padding: 15px;
     }
-    
+    .card:hover {
+        transform: rotate(10deg);
+    }
     .card-number {
         font-size: 1.2rem;
         margin-bottom: 3px;

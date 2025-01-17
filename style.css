@@ -248,8 +248,8 @@ main > section {
 }
 
 .fact-cards {
-    /* width: 85%;
-    margin: 0 auto; */
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -282,6 +282,62 @@ main > section {
     width: 2.8rem;
     margin-bottom: 10px;
 }
+
+
+
+/* sponsors section start */
+
+.sponsors-section {
+    width: 90%;
+    margin: 0 auto 130px;
+}
+.sponsors {
+    text-align: center;
+}
+.sponsors-title {
+    color: rgb(19, 19, 19);
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+}
+.sponsors-description {
+    color: rgb(114, 114, 114);
+    font-size: 1rem;
+    width: 500px;
+    margin: 0 auto 2.9rem;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.company img {
+    filter: grayscale(100%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.company img:hover {
+    filter: grayscale(0%);
+}
+
+
+/* footer section start */
+
+footer {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+}
+footer h4 {
+    color: rgb(66, 66, 66);
+    font-size: 20px;
+    text-align: center;
+    padding: 40px;
+}
+
+
+
 
 
 
@@ -464,7 +520,42 @@ main > section {
         width: 2rem;
         margin-bottom: 5px;
     }
+
+    /* sponsor section responsive */
+
     
+    .sponsors-section {
+        width: 90%;
+        margin: 0 auto 100px;
+    }
+    .sponsors {
+        text-align: center;
+    }
+    .sponsors-title {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+    .sponsors-description {
+        font-size: 0.8rem;
+        width: 200px;
+    }
+
+    .company {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .company img {
+        width: 90px;
+        margin: auto;
+    }
+
+    /* footer section start responsive */
+    
+    footer h4 {
+        font-size: 12px;
+        padding: 10px;
+    }
 }
 
 /*small devive responive end*/
@@ -627,6 +718,41 @@ main > section {
         margin-bottom: 7px;
     }
     
+
+    /* sponsors section responsive */
+
+    .sponsors-section {
+        width: 90%;
+        margin: 0 auto 130px;
+    }
+    .sponsors {
+        text-align: center;
+    }
+    .sponsors-title {
+        font-size: 2.8rem;
+        margin-bottom: 1.5rem;
+    }
+    .sponsors-description {
+        font-size: 1.8rem;
+        width: 400px;
+    }
+
+    .company {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .company img {
+        width: 180px;
+        margin: auto;
+    }
+
+    /* footer section responsive */
+    footer h4 {
+        font-size: 17px;
+        padding: 13px;
+    }
+
 
 }
 

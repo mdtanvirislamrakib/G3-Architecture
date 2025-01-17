@@ -263,7 +263,7 @@ main > section {
     transition: 0.5s;
 }
 .card:hover {
-    transform: scale(1.05);
+    transform: rotate(20deg);
 }
 
 .card-number {
